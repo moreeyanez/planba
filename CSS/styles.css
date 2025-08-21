@@ -1,0 +1,44 @@
+/* CSS */
+/* Tipografía */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+ul{
+    list-style: none;
+}
+
+li>a{
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.tituloPag{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+#fondoPrincipal{
+    background-image: url(../assets/imagenes/planetariocnm.jpg);
+    height: 600px;
+    background-position: center; /* lo ajusta al centro o podemos usar los ejes x e y si quueremos darle importancia a alguna parte de la imagen*/
+    background-repeat: no-repeat; /* si la imagen es muy chiquita, intenta llenar el espacio con la misma imagen varias veces, entonces con el no repeat, evitamos eso */
+    background-size: cover; /* ajusta/distribuye la imagen al espacio disponible */
+}
+
+#fondoPrincipal .nombrePag{
+    font-family: "Playfair Display", serif;
+    font-weight: 1000;
+    font-style: normal;
+}
