@@ -12,56 +12,55 @@ body{
     font-weight: 300;
     font-style: normal;
     padding-top: 66px;
+    overflow-x: hidden; /* Para evitar el scroll horizontal */
+}
+
+.hero {
+  height: 600px;
+  background-position: center; /* lo ajusta al centro o podemos usar los ejes x e y si quueremos darle importancia a alguna parte de la imagen*/
+  background-repeat: no-repeat; /* si la imagen es muy chiquita, intenta llenar el espacio con la misma imagen varias veces, entonces con el no repeat, evitamos eso */
+  background-size: cover; /* ajusta/distribuye la imagen al espacio disponible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px; /* margen lateral para que no “toque” los bordes */
 }
 
 .page-inicio .hero {
     background-image: url(../assets/imagenes/mario-ame-nDCkR5lVjKo-unsplash.jpg);
-    height: 600px;
-    background-position: center; /* lo ajusta al centro o podemos usar los ejes x e y si quueremos darle importancia a alguna parte de la imagen*/
-    background-repeat: no-repeat; /* si la imagen es muy chiquita, intenta llenar el espacio con la misma imagen varias veces, entonces con el no repeat, evitamos eso */
-    background-size: cover; /* ajusta/distribuye la imagen al espacio disponible */
 }
 
 .page-actividades .hero {
     background-image: url(../assets/imagenes/planetariocnm.jpg);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
 }
 
 .page-contacto .hero {
-    background-image: url(../assets/imagenes/bjorn-pierre-GE-x38xCebQ-unsplash.jpg);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
+    background-image: url(../assets/imagenes/bjorn-pierre-GE-x38xCebQ-unsplash.jpg); 
 }
 
 .page-recomendaciones .hero {
     background-image: url(../assets/imagenes/sergio-rodriguez-rrlEOXRmMAA-unsplash.jpg);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
 }
 
 .page-sobre .hero {
     background-image: url(../assets/imagenes/gustavo-sanchez-j1Yx11T0UI0-unsplash.jpg);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: cover; 
 }
 
 .hero__title {
   font-family: "Playfair Display", serif;
   font-weight: 1000;
-  font-size: 4rem;
+    font-size: clamp(2rem, 10vw, 4rem);
+  line-height: 1.1;
   font-style: normal;
   color: #fff;
   text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
 }
+
+.hero__title--long {
+  font-size: clamp(1.4rem, 8vw, 2.6rem);
+  white-space: nowrap;
+}
+
 
 /* Navbar */
 .navbar {
@@ -99,5 +98,42 @@ body{
   font-weight:700;
 }
 
+.footer {
+  background: #F0F0D7;                 
+}
+
+.footer .footer-brand {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.footer .footer-icon { color: #6c757d; }
+.footer .footer-icon:hover { color: #2d4f83; }
+
+.footer .footer-link { color: #000000; text-decoration: underline; }
+
+.btn-whatsapp {
+  width: 40px;
+  height: 40px;
+  background-color: #25D366; /* verde WhatsApp, lo podés cambiar */
+  border: none;
+  border-radius: 50%; /* círculo perfecto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: white; /* color del ícono */
+  text-decoration: none; /* quita subrayado por si acaso */
+}
+
+.btn-whatsapp:hover {
+  background-color: #20b856; /* tono más oscuro al pasar el mouse */
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
 
 

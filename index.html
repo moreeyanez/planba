@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./CSS/styles.css"> 
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/imagenes/favicon-32x32.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   </head>
  
   <body>
@@ -50,9 +51,53 @@
       </section>
     </main>
 
-    <footer>
-      <!-- Aca van las redes sociales, puede repetirse el menu, el copyright-->
+    
+    <footer class="footer border-top py-4">
+      <div class="container-fluid px-3 px-md-4">
+        <div class="row row-cols-1 row-cols-md-5 gy-4 align-items-center">
+
+          <!-- Redes -->
+          <div class="col">
+            <h5 class="mb-3">Redes</h5>
+            <div class="d-flex align-items-center gap-3">
+              <a href="https://www.instagram.com/" class="footer-icon" aria-label="Instagram"><i class="bi bi-instagram fs-3"></i></a>
+              <a href="https://www.linkedin.com/in/morena-ya%C3%B1ez-84a538370/" class="footer-icon" aria-label="LinkedIn"><i class="bi bi-linkedin fs-3"></i></a>
+              <a href="https://www.tiktok.com/" class="footer-icon" aria-label="TikTok"><i class="bi bi-tiktok fs-3"></i></a>
+            </div>
+          </div>
+
+          <!-- Ayúdanos -->
+          <div class="col d-flex justify-content-md-start">
+            <a href="./pages/contacto.html" class="footer-link">Ayudanos a mejorar</a>
+          </div>
+
+          <!-- Centro (vacío / copyright ) -->
+          <div class="col text-center d-none d-md-block">
+            <!-- Ejemplo: <small class="text-muted">© 2025 PlanBA</small> -->
+          </div>
+
+          <!-- Contacto -->
+          <div class="col text-md-end">
+            <h5 class="mb-1">Contacto</h5>
+            <p class="mb-0"><a href="tel:+5491170306303" class="text-reset">+54 9 11 7030-6303</a></p>
+            <p class="mb-0"><a href="mailto:morena.yanez10@gmail.com" class="text-reset">morena.yanez10@gmail.com</a></p>
+          </div>
+
+          <!-- Marca + logo -->
+          <div class="col d-flex justify-content-md-end align-self-start gap-2">
+            <span class="footer-brand">PlanBA</span>
+            <img src="./assets/imagenes/city-tour.png" alt="Logo PlanBA" width="44" height="44">
+          </div>
+
+        </div>
+      </div>
     </footer>
+
+
+    <!-- Botón de WhatsApp -->
+    <a href="https://wa.me/5491170306303" class="btn-whatsapp" aria-label="Escribir por WhatsApp" target="_blank" rel="noopener">
+      <i class="bi bi-whatsapp fs-3"></i>
+    </a>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   </body>
