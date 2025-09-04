@@ -11,67 +11,88 @@ body{
     font-family: "Raleway", sans-serif;
     font-weight: 300;
     font-style: normal;
+    padding-top: 66px;
 }
 
-#fondoPrincipal{
-    background-image: url(../assets/imagenes/planetariocnm.jpg);
+.page-inicio .hero {
+    background-image: url(../assets/imagenes/mario-ame-nDCkR5lVjKo-unsplash.jpg);
     height: 600px;
     background-position: center; /* lo ajusta al centro o podemos usar los ejes x e y si quueremos darle importancia a alguna parte de la imagen*/
     background-repeat: no-repeat; /* si la imagen es muy chiquita, intenta llenar el espacio con la misma imagen varias veces, entonces con el no repeat, evitamos eso */
     background-size: cover; /* ajusta/distribuye la imagen al espacio disponible */
 }
 
-#fondoPrincipal .nombrePag{
-    font-family: "Playfair Display", serif;
-    font-weight: 1000;
-    font-style: normal;
+.page-actividades .hero {
+    background-image: url(../assets/imagenes/planetariocnm.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
-.navBar{
-    background-color: #AAB99A;
-    display: flex;
-    align-items: center;
-    /* position: fixed; */
+.page-contacto .hero {
+    background-image: url(../assets/imagenes/bjorn-pierre-GE-x38xCebQ-unsplash.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
-.navBar ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: flex-end;
-    align-items: center;
-} 
-
-.navBar li{
-    margin: 0 15px;
+.page-recomendaciones .hero {
+    background-image: url(../assets/imagenes/sergio-rodriguez-rrlEOXRmMAA-unsplash.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
-.navBar a{
-    text-decoration: none;
-    padding: 15px 20px;
-    display: block;
-    color: black;
-    font-size: 15px;
+.page-sobre .hero {
+    background-image: url(../assets/imagenes/gustavo-sanchez-j1Yx11T0UI0-unsplash.jpg);
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
 }
 
-.logo{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
+.hero__title {
+  font-family: "Playfair Display", serif;
+  font-weight: 1000;
+  font-size: 4rem;
+  font-style: normal;
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
 }
 
-.logo img{
-    width: 7%;
-    padding: 15px 20px;
-    display: block;
+/* Navbar */
+.navbar {
+  background-color: #AAB99A; /
 }
 
-.tituloPag{
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
-    font-style: normal;
-    padding: 10px;
-    display: block;
+/* Logo */
+.navbar-brand img {
+  width: 40px; 
+  height: auto; 
+  margin-right: 8px;
 }
+
+/* Título PlanBA */
+.navbar-brand span {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem; 
+  font-weight: 700;
+}
+
+/* Estilos de los links */
+.navbar-nav .nav-link {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black; 
+}
+
+.navbar-nav .nav-link:hover {
+  color: #5a738d; /
+}
+
+
+
