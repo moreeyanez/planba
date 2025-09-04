@@ -94,5 +94,10 @@ body{
   color: #5a738d; /
 }
 
+.navbar .nav-link.active{
+  color:#000000;
+  font-weight:700;
+}
+
 
 
