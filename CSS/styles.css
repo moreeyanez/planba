@@ -131,9 +131,18 @@ body{
 }
 
 .btn-whatsapp:hover {
-  background-color: #20b856; /* tono más oscuro al pasar el mouse */
+  background-color: #20b856;
   transform: scale(1.05);
   transition: all 0.2s ease;
 }
 
+
+.upload-dropzone{
+  background: #e1e4e1;   /
+}
+
+input[type="file"] {
+  max-width: 100%;   
+  box-sizing: border-box; 
+}
 

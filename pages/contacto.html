@@ -45,8 +45,41 @@
         <h1 class="hero__title">CONTACTO</h1>
       </section>
 
-      <section class="mainContent">
+      <section class="container py-5">
+        <h2 class="mb-4">Contanos tus experiencias</h2>
 
+        <form class="row g-4 needs-validation" novalidate action="#">
+          <div class="col-12 col-md-6">
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="nombre" required>
+              <div class="invalid-feedback">Ingresá tu nombre.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Ingresá un email válido.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="experiencias" class="form-label">Tus experiencias, recomendaciones o sugerencias</label>
+              <textarea class="form-control" id="experiencias" rows="4" required></textarea>
+              <div class="invalid-feedback">Contanos algo! </div>
+            </div>
+            
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <label for="foto" class="form-label">Agregar imagen (opcional)</label>
+            <div class="upload-dropzone text-center p-5 border rounded-3">
+              <i class="bi bi-image fs-1 d-block mb-2"></i>
+              <p class="mb-2">Arrastrá una imagen o hacé click</p>
+              <input class="form-control w-auto mx-auto" type="file" id="foto" accept="image/*">
+            </div>
+          </div>
+        </form>
       </section>
     </main>
 
@@ -98,5 +131,17 @@
     </a>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+    <script>
+      (() => {
+        const forms = document.querySelectorAll('.needs-validation');
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', e => {
+            if (!form.checkValidity()) { e.preventDefault(); e.stopPropagation(); }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      })();
+    </script>
+
+  </body>
 </html>
