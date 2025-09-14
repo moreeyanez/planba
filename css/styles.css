@@ -90,7 +90,7 @@ body{
 }
 
 .navbar-nav .nav-link:hover {
-  color: #5a738d;
+  color: #1a2d41;
 }
 
 .navbar .nav-link.active{
@@ -109,16 +109,16 @@ body{
 }
 
 .footer .footer-icon { color: #6c757d; }
-.footer .footer-icon:hover { color: #2d4f83; }
+.footer .footer-icon:hover { color: #1a2d41; }
 
 .footer .footer-link { color: #000000; text-decoration: underline; }
 
 .btn-whatsapp {
   width: 40px;
   height: 40px;
-  background-color: #25D366; /* verde WhatsApp, lo podés cambiar */
+  background-color: #25D366; 
   border: none;
-  border-radius: 50%; /* círculo perfecto */
+  border-radius: 50%; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,8 +126,9 @@ body{
   bottom: 15px;
   right: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  color: white; /* color del ícono */
-  text-decoration: none; /* quita subrayado por si acaso */
+  color: white; 
+  text-decoration: none;
+  z-index: 1000;
 }
 
 .btn-whatsapp:hover {
@@ -161,4 +162,17 @@ input[type="file"] {
 
 .btn{
   background-color: #727D73;
+}
+
+.card-fixed {
+  width: 18rem;
+}
+
+@media (min-width: 768px) {
+  .sobre-img {
+    float: left;
+    max-width: 40%; /* o el ancho que quieras */
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
 }
