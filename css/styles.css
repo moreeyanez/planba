@@ -1,18 +1,18 @@
 /* CSS */
 /* Tipografía */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
- 
-*{
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    font-family: "Raleway", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-    padding-top: 66px;
-    overflow-x: hidden; /* Para evitar el scroll horizontal */
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  padding-top: 66px;
+  overflow-x: hidden; /* Para evitar el scroll horizontal */
 }
 
 .hero {
@@ -27,33 +27,33 @@ body{
 }
 
 .page-inicio .hero {
-    background-image: url(../assets/imagenes/mario-ame-nDCkR5lVjKo-unsplash.jpg);
+  background-image: url(../assets/imagenes/mario-ame-nDCkR5lVjKo-unsplash.jpg);
 }
 
 .page-actividades .hero {
-    background-image: url(../assets/imagenes/planetariocnm.jpg);
+  background-image: url(../assets/imagenes/planetariocnm.jpg);
 }
 
 .page-contacto .hero {
-    background-image: url(../assets/imagenes/bjorn-pierre-GE-x38xCebQ-unsplash.jpg); 
+  background-image: url(../assets/imagenes/bjorn-pierre-GE-x38xCebQ-unsplash.jpg);
 }
 
 .page-recomendaciones .hero {
-    background-image: url(../assets/imagenes/sergio-rodriguez-rrlEOXRmMAA-unsplash.jpg);
+  background-image: url(../assets/imagenes/sergio-rodriguez-rrlEOXRmMAA-unsplash.jpg);
 }
 
 .page-sobre .hero {
-    background-image: url(../assets/imagenes/francisco-ghisletti-_yo28TDZFNo-unsplash.jpg);
+  background-image: url(../assets/imagenes/francisco-ghisletti-_yo28TDZFNo-unsplash.jpg);
 }
 
 .hero__title {
   font-family: "Playfair Display", serif;
   font-weight: 1000;
-    font-size: clamp(2rem, 10vw, 4rem);
+  font-size: clamp(2rem, 10vw, 4rem);
   line-height: 1.1;
   font-style: normal;
   color: #fff;
-  text-shadow: 3px 3px 6px rgba(0,0,0,0.9);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9);
 }
 
 .hero__title--long {
@@ -61,64 +61,81 @@ body{
   white-space: nowrap;
 }
 
-
 /* Navbar */
 .navbar {
-  background-color: #AAB99A;
+  background-color: #aab99a;
 }
 
 /* Logo */
 .navbar-brand img {
-  width: 40px; 
-  height: auto; 
+  width: 40px;
+  height: auto;
   margin-right: 8px;
 }
 
 /* Título PlanBA */
 .navbar-brand span {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.5rem; 
+  font-family: "Playfair Display", serif;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
 /* Estilos de los links */
 .navbar-nav .nav-link {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  color: black; 
+  color: black;
 }
 
 .navbar-nav .nav-link:hover {
   color: #1a2d41;
 }
 
-.navbar .nav-link.active{
-  color:#000000;
-  font-weight:700;
+.navbar .nav-link.active {
+  color: #000000;
+  font-weight: 700;
 }
 
 .footer {
-  background: #F0F0D7;                 
+  background: #727d73;
 }
 
 .footer .footer-brand {
   font-family: "Playfair Display", serif;
   font-weight: 700;
   font-size: 1.4rem;
+  color: #f0f0d7;
 }
 
-.footer .footer-icon { color: #6c757d; }
-.footer .footer-icon:hover { color: #1a2d41; }
+.footer .footer-icon {
+  color: #f0f0d7;
+}
+.footer .footer-icon:hover {
+  color: #94c8ff;
+}
 
-.footer .footer-link { color: #000000; text-decoration: underline; }
+.footer .footer-link {
+  color: #f0f0d7;
+  text-decoration: underline;
+}
+.footer .footer-link:hover {
+  color: #94c8ff;
+}
+
+.footer h5 {
+  color: #f0f0d7;
+}
+.footer p {
+  color: #f0f0d7;
+}
 
 .btn-whatsapp {
   width: 40px;
   height: 40px;
-  background-color: #25D366; 
+  background-color: #25d366;
   border: none;
-  border-radius: 50%; 
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +143,7 @@ body{
   bottom: 15px;
   right: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-  color: white; 
+  color: white;
   text-decoration: none;
   z-index: 1000;
 }
@@ -137,31 +154,36 @@ body{
   transition: all 0.2s ease;
 }
 
-
-.upload-dropzone{
+.upload-dropzone {
   background: #e1e4e1;
 }
 
 input[type="file"] {
-  max-width: 100%;   
-  box-sizing: border-box; 
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-.img-cover{ width: 100%; height: 100%; object-fit: cover; }
+.custom-bg {
+  background-color: #d0ddd0;
+}
 
-
-.custom-bg{
-  background-color: #D0DDD0;
+.custom-bg__otra-seccion {
+  background-color: #f0f0d7;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-  width: 3%;   /* achica el área de clic, se pegan más al borde */
+  width: 3%; /* achica el área de clic, se pegan más al borde */
 }
 
-.btn{
-  background-color: #727D73;
+.btn {
+  background-color: #727d73;
   width: auto;
   display: inline-block;
 }
@@ -203,14 +225,148 @@ input[type="file"] {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-} 
+}
 
 .categoria-card:hover .card-subtitle {
   opacity: 1;
   transform: translateY(0);
 }
 
-.card-img-top{
+.card-img-top {
   width: 100%;
   height: 50%;
+}
+
+.actividad-card {
+  max-width: 280px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.actividad-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.link-actividad {
+  font-size: 0.9rem;
+  color: #6c63ff;
+  text-decoration: none;
+  align-self: flex-start;
+}
+
+.link-actividad:hover {
+  text-decoration: underline;
+}
+
+.relleno img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Pattern animation by Temani Afif. https://prismic.io/blog/css-background-effects#css-background-pattern-effects */
+.gracias-bg {
+  --s: 100px; /* control the size */
+  --c1: #f0f0d7;
+  --c2: #727d73;
+  
+  --_s: calc(2*var(--s)) calc(2*var(--s));
+  --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+  --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+  background:
+    calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),
+    calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+    calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),
+    calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+    conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+     0 0/var(--s) var(--s);
+  animation: m 3s infinite;
+}
+@keyframes m {
+  0% {
+   background-position: 
+    calc( .9*var(--s)) calc( .9*var(--s)),
+    calc(-.1*var(--s)) calc(-.1*var(--s)),
+    calc( .7*var(--s)) calc( .7*var(--s)),
+    calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  25% {
+   background-position: 
+    calc(1.9*var(--s)) calc( .9*var(--s)),
+    calc(-1.1*var(--s)) calc(-.1*var(--s)),
+    calc(1.7*var(--s)) calc( .7*var(--s)),
+    calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+  }
+  50% {
+   background-position: 
+    calc(1.9*var(--s)) calc(-.1*var(--s)),
+    calc(-1.1*var(--s)) calc( .9*var(--s)),
+    calc(1.7*var(--s)) calc(-.3*var(--s)),
+    calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  75% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-.1*var(--s)),
+    calc(-2.1*var(--s)) calc( .9*var(--s)),
+    calc(2.7*var(--s)) calc(-.3*var(--s)),
+    calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+  }
+  100% {
+   background-position: 
+    calc(2.9*var(--s)) calc(-1.1*var(--s)),
+    calc(-2.1*var(--s)) calc(1.9*var(--s)),
+    calc(2.7*var(--s)) calc(-1.3*var(--s)),
+    calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+  }
+}
+
+.gracias-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gracias-box {
+  background-color: rgba(255, 255, 255, 0.9); /* fondo blanco semi-transparente */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.gracias-box h1 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #333;
+}
+
+.gracias-box a {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #436756;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.gracias-box a:hover {
+  background-color: #244739;
 }
