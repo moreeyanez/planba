@@ -54,19 +54,19 @@
           <div class="col-12 col-md-6 order-1 order-md-1">
             <div class="mb-3">
               <label for="nombre" class="form-label">Nombre y Apellido</label>
-              <input type="text" class="form-control" id="nombre" required name="nombre">
+              <input type="text" class="form-control" id="nombre" name="nombre" required>
               <div class="invalid-feedback">Ingresá tu nombre.</div>
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" required name="email">
+              <input type="email" class="form-control" id="email" name="email" required>
               <div class="invalid-feedback">Ingresá un email válido.</div>
             </div>
 
             <div class="mb-3">
-              <label for="experiencias" class="form-label">Tus experiencias, recomendaciones o sugerencias</label>
-              <textarea class="form-control" id="experiencias" rows="4" required name="mensaje"></textarea>
+              <label for="mensaje" class="form-label">Tus experiencias, recomendaciones o sugerencias</label>
+              <textarea class="form-control" id="experiencias" name="mensaje" rows="4" required></textarea>
               <div class="invalid-feedback">Contanos algo! </div>
             </div>
           </div>
@@ -76,9 +76,13 @@
             <div class="upload-dropzone text-center p-5 border rounded-3">
               <i class="bi bi-image fs-1 d-block mb-2"></i>
               <p class="mb-2">Arrastrá una imagen o hacé click</p>
-              <input class="form-control w-auto mx-auto" type="file" id="foto" accept="image/*">
+              <input class="form-control w-auto mx-auto" id="foto" type="file" name="archivo" accept=".pdf,.jpg,.png" enctype="multipart/form-data">
             </div>
           </div>
+
+          <!-- Extras para mejor funcionamiento -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://www.google.com">
 
           <div class="col-12 order-3">
             <button class="btn btn-primary" type="submit">Enviar</button>
