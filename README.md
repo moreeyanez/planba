@@ -9,12 +9,12 @@ Este sitio ofrece una recopilación de actividades para realizar en la ciudad, t
 ---
 ## ✨ Características Principales
 - Accesibilidad
-  - Etiquetas semánticas: <header>, <nav>, <main>, <section>, <footer>.
-  - Encabezados jerárquicos: un solo <h1> por página, <h2>/<h3> para secciones y subsecciones.
+  - Etiquetas semánticas: `<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`.
+  - Encabezados jerárquicos: un solo `<h1>` por página, `<h2>`/`<h3>` para secciones y subsecciones.
   - Atributos ARIA en componentes dinámicos (dropdowns, menús, enlaces).
   - alt descriptivos en las imágenes.
 - SEO & Metadatos
-  - <title> claros y referenciales
+  - `<title>` claros y referenciales
   - <meta name="description"> y <meta name="keywords"> específicos por página.
   - Uso de URLs amigables y anclas consistentes.
 - Rendimiento
