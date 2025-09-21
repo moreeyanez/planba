@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +9,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/imagenes/favicon-32x32.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header> 
-      <nav class="navbar navbar-expand-lg fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
           <!-- Logo + Nombre -->
           <a class="navbar-brand d-flex align-items-center" href="../index.html">
@@ -47,25 +48,25 @@
         <h1 class="hero__title hero__title--long">RECOMENDACIONES</h1>
       </section>
 
-      <section class="mainContent">
+      <section class="main-content">
         <div class="container-fluid custom-bg__otra-seccion py-5">
           <h3 class="mb-4">Rutas Recomendadas</h3>
           <h4 class="my-2">Ruta Nocturna: Teatro + Pizza + Bar</h4>
           <p>Ideal para una salida porteña clásica con amigos o pareja.</p>
-          <iframe src="https://www.google.com/maps/d/embed?mid=1Zqd7R5FhPYKmOvtKeeBh0O34PMYUZrs&ehbc=2E312F" width="100%" height="400"></iframe>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1Zqd7R5FhPYKmOvtKeeBh0O34PMYUZrs&ehbc=2E312F" title="Mapa Ruta Nocturna: Teatro + Pizza + Bar" width="100%" height="400"></iframe>
         
           <h4 class="my-2">Ruta Familiar: Día con chicos</h4>
           <p>Pensada para familias con niños, actividades variadas y divertidas.</p>
-          <iframe src="https://www.google.com/maps/d/embed?mid=17Z61tuP3Lb12UrsCB56K9F23lUbrXHc&ehbc=2E312F" width="100%" height="400"></iframe>
+          <iframe src="https://www.google.com/maps/d/embed?mid=17Z61tuP3Lb12UrsCB56K9F23lUbrXHc&ehbc=2E312F" title="Mapa Ruta Familiar: Día con chicos" width="100%" height="400"></iframe>
         
           <h4 class="my-2">Ruta de Día Completo: Cultura + Gastronomía + Paseo</h4>
           <p>Para quienes quieren visitar lo esencial de Buenos Aires en un solo día.</p>
-          <iframe src="https://www.google.com/maps/d/embed?mid=1r7JL4tLj5VeZa8eMRfWrv44waY22Tt8&ehbc=2E312F" width="100%" height="400"></iframe>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1r7JL4tLj5VeZa8eMRfWrv44waY22Tt8&ehbc=2E312F" title="Mapa Ruta de Día Completo: Cultura + Gastronomía + Paseo" width="100%" height="400"></iframe>
         </div>
         
         <div class="container-fluid custom-bg pt-3 pb-2">
           <h3 class="mb-4">Testimonios</h3> 
-          <div id="testimonialCarousel" class="carousel slide">
+          <div id="testimonialCarousel" class="carousel slide" aria-label="Carrusel de testimonios">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -102,7 +103,7 @@
                 <div class="testimonial-box">
                   <p class="quote">“Nunca pensé que iba a disfrutar tanto caminar por Buenos Aires. Gracias a las recomendaciones, descubrí rincones mágicos que no conocía.”</p>
                   <div class="persona">
-                    <img src="../assets/imagenes/usuario3.jpg" class="testimonial-img" alt="Martín López">
+                    <img src="../assets/imagenes/usuario3.jpg" class="testimonial-img" alt="Sofía Méndez">
                     <h3>Sofía Méndez</h3>
                     <p class="detalle">29 años – Caballito</p>
                   </div>
@@ -113,7 +114,7 @@
                 <div class="testimonial-box">
                   <p class="quote">“Viajé con mis hijos y fue clave tener actividades pensadas para ellos. La sección de familia nos salvó más de una tarde.”</p>
                   <div class="persona">
-                    <img src="../assets/imagenes/usuario4.jpg" class="testimonial-img" alt="Martín López">
+                    <img src="../assets/imagenes/usuario4.jpg" class="testimonial-img" alt="Federico Ramírez">
                     <h3>Federico Ramírez</h3>
                     <p class="detalle">41 años – Rosario</p>
                   </div>
@@ -124,7 +125,7 @@
                 <div class="testimonial-box">
                   <p class="quote">“Me encantó cómo está organizado todo. Las categorías me ayudaron a elegir según mi humor del día. ¡Muy bien curado!”</p>
                   <div class="persona">
-                    <img src="../assets/imagenes/usuario5.jpg" class="testimonial-img" alt="Martín López">
+                    <img src="../assets/imagenes/usuario5.jpg" class="testimonial-img" alt="Camila Duarte">
                     <h3>Camila Duarte</h3>
                     <p class="detalle">35 años – Recoleta</p>
                   </div>
@@ -153,9 +154,9 @@
           <div class="col">
             <h5 class="mb-3">Redes</h5>
             <div class="d-flex align-items-center gap-3">
-              <a href="https://www.instagram.com/" class="footer-icon" aria-label="Instagram"><i class="bi bi-instagram fs-3"></i></a>
-              <a href="https://www.linkedin.com/in/morena-ya%C3%B1ez-84a538370/" class="footer-icon" aria-label="LinkedIn"><i class="bi bi-linkedin fs-3"></i></a>
-              <a href="https://www.tiktok.com/" class="footer-icon" aria-label="TikTok"><i class="bi bi-tiktok fs-3"></i></a>
+              <a href="https://www.instagram.com/" class="footer-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-3"></i></a>
+              <a href="https://www.linkedin.com/in/morena-ya%C3%B1ez-84a538370/" class="footer-icon" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin fs-3"></i></a>
+              <a href="https://www.tiktok.com/" class="footer-icon" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><i class="bi bi-tiktok fs-3"></i></a>
             </div>
           </div>
 
@@ -164,9 +165,9 @@
             <a href="./contacto.html" class="footer-link">Ayudanos a mejorar</a>
           </div>
 
-          <!-- Centro (vacío / copyright ) -->
+          <!-- Centro (copyright ) -->
           <div class="col text-center d-none d-md-block">
-            <!-- Ejemplo: <small class="text-muted">© 2025 PlanBA</small> -->
+            <small class="text-muted">© 2025 PlanBA</small>
           </div>
 
           <!-- Contacto -->
@@ -188,7 +189,7 @@
 
 
     <!-- Botón de WhatsApp -->
-    <a href="https://wa.me/5491170306303" class="btn-whatsapp" aria-label="Escribir por WhatsApp" target="_blank" rel="noopener">
+    <a href="https://wa.me/5491170306303" class="btn-whatsapp" aria-label="Escribir por WhatsApp" target="_blank" rel="noopener noreferrer">
       <i class="bi bi-whatsapp fs-3"></i>
     </a>
     
