@@ -1,0 +1,109 @@
+.btn {
+  background-color: $bg-footer;
+  width: auto;
+  display: inline-block;
+}
+
+.btn-whatsapp {
+  width: 40px;
+  height: 40px;
+  background-color: $color-whatsapp;
+  border: none;
+  border-radius: 50%;
+  @include flex-center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  color: white;
+  text-decoration: none;
+  z-index: 1000;
+
+  &:hover {
+    background-color: $color-whatsapp-hover;
+    transform: scale(1.05);
+    transition: all 0.2s ease;
+  }
+}
+
+.card-fixed {
+  width: 18rem;
+}
+
+.actividad-card {
+  @include card-base;
+}
+
+.categoria-card {
+  @include card-base;
+  position: relative;
+
+  .card-subtitle {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 0.9rem;
+    color: #5a738d;
+    min-height: 2.8em;
+    display: block;
+  }
+
+  &:hover {
+    .card-subtitle {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.relleno img {
+  @include img-cover;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 50%; 
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: $color-card-text;
+  margin-bottom: 0.5rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link-actividad {
+  font-size: 0.9rem;
+  color: $color-link;
+  text-decoration: none;
+  align-self: flex-start;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.upload-dropzone {
+  background: #e1e4e1;
+}
+
+input[type="file"] {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 3%; /* achica el área de clic, se pegan más al borde */
+}
